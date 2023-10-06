@@ -12,8 +12,8 @@ This makes a user send all messages from one/many chat(s) to another chat(s).
 <details>
 <summary>Local Deploys</summary>
 <br>
-- Clone the repo:   <code>git clone https://github.com/Ayush7445/telegram-auto_forwarder</code></br>
-- Make a <code>.env</code> file in the root of the repo, like <a href="https://github.com/Ayush7445/telegram-auto_forwarder/blob/main/.env.sample">.env.sample</a> and fill in the values.</br>
+- Clone the repo:   <code>git clone https://github.com/azakalov/itstream</code></br>
+- Make a <code>.env</code> file in the root of the repo, like <a href="https://github.com/azakalov/itstream/blob/main/.env.sample">.env.sample</a> and fill in the values.</br>
 - Use <code>python3 bot.py</code> to start the bot.</br>  
 </details>
 
