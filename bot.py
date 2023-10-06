@@ -31,17 +31,17 @@ FROM = [int(i) for i in FROM_.split()]
 TO = [int(i) for i in TO_.split()]
 
 try:
-    BotzHubUser = TelegramClient(StringSession(SESSION), APP_ID, API_HASH)
-    BotzHubUser.start()
+    ITStreamBot = TelegramClient(StringSession(SESSION), APP_ID, API_HASH)
+    ITStreamBot.start()
 except Exception as ap:
     print(f"ERROR - {ap}")
     exit(1)
 
-@BotzHubUser.on(events.NewMessage(incoming=True, chats=FROM))
+@ITStreamBot.on(events.NewMessage(incoming=True, chats=FROM))
 async def sender_bH(event):
     for i in TO:
         try:
-            await BotzHubUser.send_message(
+            await ITStreamBot.send_message(
                 i,
                 event.message
             )
@@ -49,4 +49,4 @@ async def sender_bH(event):
             print(e)
 
 print("Bot has started.")
-BotzHubUser.run_until_disconnected()
+ITStreamBot.run_until_disconnected()
